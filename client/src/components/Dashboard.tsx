@@ -1,5 +1,3 @@
-import React from 'react'
-
 type Tx = {
   id: string
   title: string
