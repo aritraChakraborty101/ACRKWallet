@@ -1,8 +1,11 @@
 import './App.css'
-import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react'
+import { SignedIn, SignedOut, SignInButton, UserButton, useUser } from '@clerk/clerk-react'
 import Dashboard from './components/Dashboard'
 
 function App() {
+
+  const { user } = useUser()
+
   return (
     <div className="min-h-dvh bg-gradient-to-b from-zinc-950 via-zinc-950 to-black text-zinc-100 flex flex-col justify-between">
       {/* Top navigation */}
@@ -21,7 +24,9 @@ function App() {
               </SignInButton>
             </SignedOut>
             <SignedIn>
-              <UserButton />
+              <div className="flex items-center gap-3">
+                {user?.username} <UserButton />
+              </div>
             </SignedIn>
           </div>
         </nav>
