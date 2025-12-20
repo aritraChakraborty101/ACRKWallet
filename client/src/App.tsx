@@ -21,7 +21,7 @@ function App() {
               </SignInButton>
             </SignedOut>
             <SignedIn>
-              <UserButton appearance={{ elements: { userButtonAvatarBox: 'ring-2 ring-emerald-500/60' } }} />
+              <UserButton />
             </SignedIn>
           </div>
         </nav>

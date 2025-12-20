@@ -28,9 +28,9 @@ export default function Dashboard() {
           <h2 className="mt-1 text-3xl sm:text-4xl font-semibold tracking-tight">${balance.toFixed(2)}</h2>
 
           <div className="mt-4 flex flex-wrap items-center gap-3">
-            <QuickAction icon="➕" label="Add Income" />
-            <QuickAction icon="➖" label="Add Expense" primary />
-            <QuickAction icon="📷" label="Scan Receipt" />
+            <QuickAction icon="" label="Add Income" />
+            <QuickAction icon="" label="Add Expense" primary />
+            <QuickAction icon="" label="Scan Receipt" />
           </div>
         </div>
       </section>
@@ -55,11 +55,11 @@ export default function Dashboard() {
       <nav className="md:hidden fixed bottom-4 left-0 right-0 z-20">
         <div className="mx-auto max-w-sm px-4">
           <div className="rounded-2xl bg-zinc-900/90 backdrop-blur border border-zinc-800 shadow-sm px-4 py-2 flex items-center justify-between">
-            <NavItem label="Home" icon="🏠" active />
-            <NavItem label="Stats" icon="📈" />
-            <NavItem label="Add" icon="➕" primary />
-            <NavItem label="Wallet" icon="👛" />
-            <NavItem label="More" icon="⋯" />
+            <NavItem label="Home" icon="" active />
+            <NavItem label="Stats" icon="" />
+            <NavItem label="Add" icon="" primary />
+            <NavItem label="Wallet" icon="" />
+            <NavItem label="More" icon="" />
           </div>
         </div>
       </nav>
@@ -138,12 +138,12 @@ function NavItem({ label, icon, primary, active }: { label: string; icon: string
 function iconFor(category: string) {
   switch (category) {
     case 'Food':
-      return '🍽️'
+      return ''
     case 'Transport':
-      return '🚗'
+      return ''
     case 'Income':
-      return '💸'
+      return ''
     default:
-      return '🧾'
+      return ''
   }
 }
