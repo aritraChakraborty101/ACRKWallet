@@ -45,11 +45,11 @@ Arc Wallet helps users manage their finances effortlessly through intelligent ex
 
 ##### User Authentication
 
-- [ ] User registration with email
-- [ ] User login with email and password
-- [ ] Email verification using OTP
-- [ ] Password reset functionality
-- [ ] Secure session management
+- [x] User registration with email
+- [x] User login with email and password
+- [x] Email verification using OTP
+- [x] Password reset functionality
+- [x] Secure session management
 
 ##### Expense Tracking
 
